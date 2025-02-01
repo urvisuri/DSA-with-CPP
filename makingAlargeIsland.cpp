@@ -3,10 +3,9 @@ public:
     int largestIsland(vector<vector<int>>& grid) {
         int n = grid.size();
         std::unordered_map<int, int> islandSize; // Stores island ID -> size
-        int islandId = 2;  // Start from 2 since 1 is already used in grid
+        int islandId = 2;  
         int maxIsland = 0;
 
-        // Helper function: DFS to calculate island size
         auto dfs = [&](int r, int c, int id, auto&& dfs_ref) -> int {
             if (r < 0 || c < 0 || r >= n || c >= n || grid[r][c] != 1) return 0;
             grid[r][c] = id;  // Mark cell with island ID
