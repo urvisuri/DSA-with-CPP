@@ -6,6 +6,7 @@ public:
         int islandId = 2;  
         int maxIsland = 0;
 
+
         auto dfs = [&](int r, int c, int id, auto&& dfs_ref) -> int {
             if (r < 0 || c < 0 || r >= n || c >= n || grid[r][c] != 1) return 0;
             grid[r][c] = id;  // Mark cell with island ID
