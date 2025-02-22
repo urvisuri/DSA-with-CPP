@@ -5,7 +5,7 @@ class MinStack {
         
     public:
         MinStack() {
-            // Constructor initializes the stacks
+
         }
         
         void push(int val) {
@@ -17,7 +17,7 @@ class MinStack {
         }
         
         void pop() {
-            // If the top of both stacks is the same, pop both
+           
             if (mainStack.top() == minStack.top()) {
                 minStack.pop();
             }
