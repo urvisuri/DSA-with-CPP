@@ -10,7 +10,7 @@ class MinStack {
         
         void push(int val) {
             mainStack.push(val);
-            // Only push to minStack if it's the smallest so far
+
             if (minStack.empty() || val <= minStack.top()) {
                 minStack.push(val);
             }
