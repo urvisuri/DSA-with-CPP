@@ -4,7 +4,7 @@ public:
       int candidate = nums[0];
         int count = 1;
         
-        // Boyer-Moore Voting Algorithm
+
         for (int i = 1; i < nums.size(); ++i) {
             if (count == 0) {
                 candidate = nums[i];
