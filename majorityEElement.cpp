@@ -16,7 +16,6 @@ public:
             }
         }
         
-        // Return the majority element (as per the problem, it is guaranteed to exist)
         return candidate;  
     }
 };
